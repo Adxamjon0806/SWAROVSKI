@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SWAROVSKI</title>
+  </head>
+  <body class="">
+    <header
+      class="wrapper w-[96vw] h-[667px] md:h-[770px] md:w-[98vw] lg:w-[99vw] header-bg relative"
+    >
+      <section
+        id="nav"
+        class="flex md:flex-col items-center justify-between md:justify-center px-7 py-4 bg-linear-to-b from-90% from-black/30 duration-500"
+      >
+        <button id="menuBtn" class="md:hidden w-[18px] h-[18px] relative">
+          <div
+            id="top-div"
+            class="w-full h-[1px] bg-white absolute top-0"
+          ></div>
+          <div
+            id="bot-div"
+            class="w-full h-[1px] bg-white absolute bottom-0"
+          ></div>
+        </button>
+        <h1
+          id="SWAROVSKI-title"
+          class="text-2xl md:text-9xl ztChablis text-white"
+        >
+          SWAROVSKI
+        </h1>
+        <nav class="flex gap-20 md:mb-5">
+          <div
+            id="menu"
+            class="flex-col absolute z-50 top-0 left-[-375px] w-[375px] h-full text-black duration-500 bg-white md:bg-transparent md:text-white md:w-auto md:h-auto md:static md:flex-row flex gap-5 md:gap-16"
+          >
+            <button id="closeMenuBtn" class="hidden mt-[20px] ml-[10px]">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L28 28"
+                  stroke="gray"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M1 28L28 1"
+                  stroke="gray"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <a class="md:hidden ml-2.5" href="#">Часы</a>
+            <a class="md:hidden ml-2.5" href="#">Украшения</a>
+            <a class="md:hidden ml-2.5" href="#">Сувениры</a>
+            <a class="md:hidden ml-2.5" href="#">Аксуссуары</a>
+            <div class="w-[90%] border border-borderGray ml-3 md:hidden"></div>
+            <a class="md:hidden ml-2.5 flex items-center gap-1.5" href="#"
+              >Подборки
+              <button
+                id="collectionsBtn"
+                class="cursor-pointer duration-500 rotate-180"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 15.5L12.6 8.45C12.2444 8.18333 11.7556 8.18333 11.4 8.45L2 15.5"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </a>
+            <div id="collections" class="hidden duration-500 md:hidden">
+              <p class="ml-3 text-sm">Название</p>
+              <p class="ml-3 text-sm">Название</p>
+            </div>
+            <a class="hidden md:block" href="#">Главная</a>
+            <a class="ml-2.5 sm:ml-0" href="#">О бренде</a>
+            <a class="hidden md:block" href="#">Каталог</a>
+            <a class="ml-2.5 sm:ml-0" href="#">Коллекции</a>
+            <div class="w-[90%] border border-borderGray ml-3 md:hidden"></div>
+            <a class="ml-2.5 sm:ml-0" href="#">Магазины</a>
+          </div>
+          <div class="flex gap-5">
+            <button id="searchBtn">
+              <svg
+                id="searchSvg"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0 0 50 50"
+                fill="white"
+              >
+                <path
+                  d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                ></path>
+              </svg>
+            </button>
+            <button>
+              <svg
+                id="heartSvg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 50 50"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </section>
+      <div id="searchBlock" class="w-full bg-white px-4 py-3 hidden">
+        <div class="w-full relative">
+          <svg
+            class="absolute left-[5px] top-[8px]"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 50 50"
+            fill="black"
+          >
+            <path
+              d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+            ></path>
+          </svg>
+          <input
+            class="w-full px-8 py-2 border-b border-borderGray border-b-borderGray"
+            type="text"
+            placeholder="Поиск..."
+          />
+          <svg
+            class="absolute right-[5px] top-[8px]"
+            width="24"
+            height="24"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L28 28"
+              stroke="gray"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M1 28L28 1"
+              stroke="gray"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="ml-3 mt-96 md:ml-24 md:mt-40">
+        <h2 class="heading-texts ztChablis">Весна-Лето 2025</h2>
+        <p class="text-sm sm:text-base mt-3 mb-10">
+          Шагните в наш магический мир, где сияет<br />
+          преобразующая сила кристалла.
+        </p>
+        <div class="flex gap-1.5">
+          <button class="black-btn EuclidCircularB">Каталог</button>
+          <button class="transparent-btn EuclidCircularB">Узнать больше</button>
+        </div>
+      </div>
+    </header>
+    <section
+      class="wrapper bg-mainGray flex flex-col justify-center items-center py-[70px] md:py-[100px]"
+    >
+      <h2 class="heading-texts ztChablis mb-2.5">Мастера света с 1895 года</h2>
+      <p
+        class="max-w-[717px] text-[11px] px-2 md:px-0 md:text-base text-center"
+      >
+        Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
+        <br />
+        с использованием уникальной технологии огранки. Бренд Swarovski,
+        основанный в 1895 году Даниэлем Swarovski, прославился на весь мир
+        благодаря своему мастерству в обработке стеклянных кристаллов и создании
+        изысканных ювелирных изделий.
+      </p>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
