@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -200,6 +200,514 @@
         изысканных ювелирных изделий.
       </p>
     </section>
+    <section
+      class="wrapper relative px-10 py-8 sm:px-[150px] sm:py-[100px] md:py-[50px]"
+    >
+      <button
+        id="prev"
+        class="absolute top-1/2 left-2 -translate-y-1/2 bg-transparent rounded-full p-2 hover:bg-gray-200 z-50"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="rotate-[-90deg]"
+        >
+          <path
+            d="M22 15.5L12.6 8.45C12.2444 8.18333 11.7556 8.18333 11.4 8.45L2 15.5"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <button
+        id="next"
+        class="absolute top-1/2 right-2 -translate-y-1/2 bg-transparent rounded-full p-2 hover:bg-gray-200 z-50"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="rotate-90"
+        >
+          <path
+            d="M22 15.5L12.6 8.45C12.2444 8.18333 11.7556 8.18333 11.4 8.45L2 15.5"
+            stroke="black"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <div class="relative w-full overflow-hidden">
+        <!-- Карусель -->
+        <div
+          id="carousel"
+          class="w-full flex transition-transform duration-500 ease-in-out"
+          style="transform: translateX(0%)"
+        >
+          <!-- Слайды -->
+          <div
+            class="min-w-full h-[204px] sm:h-[670px] xl:h-[674px] bg-[url(./img/Main-Theme.png)] bg-cover bg-center"
+          ></div>
+          <div
+            class="min-w-full h-[204px] sm:h-[670px] xl:h-[674px] bg-[url(./img/Main-Theme.png)] bg-cover bg-center"
+          ></div>
+          <div
+            class="min-w-full h-[204px] sm:h-[670px] xl:h-[674px] bg-[url(./img/Main-Theme.png)] bg-cover bg-center"
+          ></div>
+        </div>
+
+        <!-- Точки -->
+        <div class="flex justify-center mt-4 space-x-2">
+          <button
+            class="dot w-3 h-3 rounded-full bg-black border border-black"
+          ></button>
+          <button
+            class="dot w-3 h-3 rounded-full bg-black border border-black"
+          ></button>
+          <button
+            class="dot w-3 h-3 rounded-full bg-black border border-black"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="wrapper py-[100px] px-9 md:px-20 bg-mainGray flex flex-col items-center"
+    >
+      <h2 class="heading-texts ztChablis mb-8">Популярные товары</h2>
+      <div
+        class="custom-scroll w-full overflow-x-scroll flex justify-between gap-2.5 md:gap-4 py-10 custom-scroll"
+      >
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+        <div
+          class="min-w-[168px] md:min-w-[290px] relative pt-14 pb-3 px-2 md:px-6 bg-white"
+        >
+          <button
+            class="absolute top-3 right-5 bg-white rounded-full p-2 shadow hover:bg-gray-200"
+          >
+            <svg
+              id="heartSvg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 50 50"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z"
+              />
+            </svg>
+          </button>
+          <img src="./img/Rectangle 17.png" alt="rectangle" />
+          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+            Сережки из белого золота с аметистами и рубинами
+          </p>
+          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <button class="transparent-btn EuclidCircularB sm:hidden">
+            Посмотреть
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="wrapper w-full py-[100px] bg-white flex flex-col items-center"
+    >
+      <h2 class="heading-texts ztChablis mb-5">Коллекции</h2>
+      <div class="w-full flex flex-col sm:flex-row justify-between">
+        <div
+          class="px-3 sm:px-[50px] sm:py-[125px] md:px-[100px] xl:py-[250px]"
+        >
+          <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Культовый гламур</h3>
+          <p
+            class="text-sm md:text-base EuclidCircularB mt-5 mb-10 max-w-[510px]"
+          >
+            Мир цвета и света Swarovski оживает с Арианой Гранде, воплощающей
+            суть нашей легендарной семьи Millenia. Свежие сиреневые тона в
+            сочетании с ее яркой звездной силой создают высококлассную модную
+            фантазию.
+          </p>
+          <a class="text-black underline font-bold" href="#">Посмотреть</a>
+        </div>
+        <img class="w-full sm:w-[50%]" src="./img/glamor.png" alt="Glamor" />
+      </div>
+      <div class="w-full flex flex-col-reverse sm:flex-row justify-between">
+        <img
+          class="w-full sm:w-[50%]"
+          src="./img/StrengthOfColors.png"
+          alt="Strength Of Colors"
+        />
+        <div
+          class="px-3 sm:px-[50px] sm:py-[125px] md:px-[100px] xl:py-[250px]"
+        >
+          <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Сила цветов</h3>
+          <p
+            class="text-sm md:text-base EuclidCircularB mt-5 mb-10 max-w-[510px]"
+          >
+            Чувственный. Поэтично. Прохладный. Ариана Гранде расцветает в
+            весенне-летнем сезоне 2025 года, воплощая собой яркую романтику в
+            Идиллии. Нежные мотивы флоры и фауны, созданные с удивительной
+            живостью, придают ей мягкое сияние.
+          </p>
+          <a class="text-black underline font-bold" href="#">Посмотреть</a>
+        </div>
+      </div>
+      <div class="w-full flex flex-col sm:flex-row justify-between">
+        <div
+          class="px-3 sm:px-[50px] sm:py-[125px] md:px-[100px] xl:py-[250px]"
+        >
+          <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Коллекция Гема</h3>
+          <p
+            class="text-sm md:text-base EuclidCircularB mt-5 mb-10 max-w-[510px]"
+          >
+            Погрузитесь в прекрасный сад цветущих кристаллов. Gema предлагает
+            сияющие украшения с нежными листьями и яркими цветами, которые
+            раскрываются на ваших глазах, а также яркие продукты, вдохновленные
+            этой линией.
+          </p>
+          <a class="text-black underline font-bold" href="#">Посмотреть</a>
+        </div>
+        <img
+          class="w-full sm:w-[50%]"
+          src="./img/gemaCollection.png"
+          alt="Gema Collection"
+        />
+      </div>
+      <button class="mt-12 black-btn EuclidCircularB">Все коллекции</button>
+    </section>
+    <section
+      class="wrapper w-full py-[100px] bg-mainGray flex flex-wrap justify-center items-center gap-3"
+    >
+      <div class="w-[168px] sm:w-[316px]">
+        <div class="w-full bg-white flex justify-center items-center px-6 py-3">
+          <img src="./img/decorations.png" alt="decorations" />
+        </div>
+        <p class="w-full py-1.5 text-center bg-borderGray">Украшения</p>
+      </div>
+      <div class="w-[168px] sm:w-[316px]">
+        <div class="w-full bg-white flex justify-center items-center px-6 py-3">
+          <img src="./img/watch.png" alt="watch" />
+        </div>
+        <p class="w-full py-1.5 text-center bg-borderGray">Часы</p>
+      </div>
+      <div class="w-[168px] sm:w-[316px]">
+        <div class="w-full bg-white flex justify-center items-center px-6 py-3">
+          <img src="./img/suvenir.png" alt="suvenir" />
+        </div>
+        <p class="w-full py-1.5 text-center bg-borderGray">Сувениры</p>
+      </div>
+      <div class="w-[168px] sm:w-[316px]">
+        <div class="w-full bg-white flex justify-center items-center px-6 py-3">
+          <img src="./img/pen.png" alt="pen" />
+        </div>
+        <p class="w-full py-1.5 text-center bg-borderGray">Аксессуары</p>
+      </div>
+    </section>
+    <section
+      class="wrapper w-full py-[100px] bg-white flex flex-wrap justify-center items-center gap-3"
+    >
+      <div
+        class="w-[318px] sm:w-[336px] md:w-[350px] flex flex-col items-center gap-5 text-center"
+      >
+        <img src="./img/whose-brand.png" alt="brand" />
+        <h3 class="text-2 font-bold EuclidCircularB">Чей это бренд?</h3>
+        <p class="text-sm md:text-base EuclidCircularB">
+          Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
+          с использованием уникальной технологии огранки. Бренд Swarovski,
+          основанный в 1895 году Даниэлем Swarovski.
+        </p>
+      </div>
+      <div
+        class="w-[318px] sm:w-[336px] md:w-[350px] flex flex-col items-center gap-5 text-center"
+      >
+        <img src="./img/quality.png" alt="quality" />
+        <h3 class="text-2 font-bold EuclidCircularB">
+          Чей это бренд? Как я могу убедиться <br />
+          в качестве?
+        </h3>
+        <p class="text-sm md:text-base EuclidCircularB">
+          Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
+          с использованием уникальной технологии огранки.
+        </p>
+      </div>
+      <div
+        class="w-[318px] sm:w-[336px] md:w-[350px] flex flex-col items-center gap-5 text-center"
+      >
+        <img src="./img/garanty.png" alt="garanty-doc" />
+        <h3 class="text-2 font-bold EuclidCircularB">
+          Есть ли гарантия <br />
+          на изделия?
+        </h3>
+        <p class="text-sm md:text-base EuclidCircularB">
+          Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
+          с использованием уникальной технологии огранки.
+        </p>
+      </div>
+    </section>
+    <section
+      class="wrapper relative w-full py-[100px] flex flex-col items-center sm:items-start xl:items-center bg-[#8DBAED]"
+    >
+      <div
+        class="flex flex-col justify-center items-center gap-7 sm:relative z-10"
+      >
+        <h3 class="w-full h3-headings text-center ztChablis">
+          Искусство сиять со Swarovski
+        </h3>
+        <p
+          class="text-sm md:text-base EuclidCircularB text-center max-w-[600px]"
+        >
+          Откройте мир безупречной красоты и роскоши вместе с кристаллами <br />
+          Swarovski! Наслаждайтесь изысканным блеском ювелирных украшений,
+          блистательных аксессуаров и эксклюзивных подарков, созданных с
+          непревзойденным мастерством австрийских мастеров.
+        </p>
+        <button class="black-btn">В каталог</button>
+      </div>
+      <img
+        class="static sm:absolute top-20 right-6 sm:right-12 md:right-24 -z-0"
+        src="./img/goose.png"
+        alt="goose"
+      />
+    </section>
+    <footer
+      class="wrapper px-[10px] py-[5px] sm:px-[100px] sm:py-[50px] bg-black text-white flex flex-wrap justify-center items-center gap-3"
+    >
+      <div
+        class="w-full flex flex-wrap justify-start items-start pb-10 gap-x-8 sm:gap-x-56 gap-y-9 border-b border-b-white EuclidCircularB"
+      >
+        <div class="w-[150px] sm:w-auto">
+          <p class="block mb-5" href="#">Коллекции</p>
+          <p class="text-xs text-borderGray mb-5">
+            The Best Accessories for Your Black Dress
+          </p>
+          <p class="text-xs text-borderGray mb-5">A High note</p>
+          <p class="text-xs text-borderGray mb-5">
+            Astrology Gifts & Zodiac Accessories
+          </p>
+          <p class="text-xs text-borderGray mb-5">Ocean-Inspired Jewelry</p>
+          <p class="text-xs text-borderGray mb-5">Eternal Sunshine</p>
+        </div>
+        <div>
+          <p class="block mb-5" href="#">Навигация</p>
+          <a class="block text-xs text-borderGray mb-5">Главная</a>
+          <a class="block text-xs text-borderGray mb-5">О бренде</a>
+          <a class="block text-xs text-borderGray mb-5">Каталог</a>
+          <a class="block text-xs text-borderGray mb-5">FAQ</a>
+        </div>
+        <div>
+          <p class="block mb-5" href="#">Магазины</p>
+          <a class="block text-xs text-borderGray mb-2">Магазины</a>
+        </div>
+      </div>
+      <h2 class="text-xl md:text-8xl ztChablis text-white">SWAROVSKI</h2>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

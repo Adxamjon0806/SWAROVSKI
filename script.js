@@ -9,6 +9,9 @@ const heartSvg = document.getElementById("heartSvg");
 const topDiv = document.getElementById("top-div").classList;
 const botDiv = document.getElementById("bot-div").classList;
 const searchBlock = document.getElementById("searchBlock").classList;
+const carousel = document.getElementById("carousel");
+const dots = document.querySelectorAll(".dot");
+let index = 0;
 let count = 0;
 
 menuBtn.addEventListener("click", () => {
@@ -52,3 +55,30 @@ searchBtn.addEventListener("click", () => {
   }
   searchBlock.toggle("hidden");
 });
+
+function updateCarousel() {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("bg-black", i === index);
+    dot.classList.toggle("bg-white", i !== index);
+  });
+}
+
+document.getElementById("next").addEventListener("click", () => {
+  index = (index + 1) % 3;
+  updateCarousel();
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+  index = (index - 1 + 3) % 3;
+  updateCarousel();
+});
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    updateCarousel();
+  });
+});
+
+updateCarousel();
