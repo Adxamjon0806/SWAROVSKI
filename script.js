@@ -41,7 +41,7 @@ searchBtn.addEventListener("click", () => {
   botDiv.toggle("bg-white");
   topDiv.toggle("bg-black");
   botDiv.toggle("bg-black");
-  nav.classList.toggle("bg-white");
+  nav.classList.toggle("bg-borderGray");
   nav.classList.toggle("from-black/30");
   SWAROVSKITitle.classList.toggle("text-white");
   if (count === 0) {

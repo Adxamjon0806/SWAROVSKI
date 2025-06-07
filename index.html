@@ -8,13 +8,16 @@
   </head>
   <body class="">
     <header
-      class="wrapper w-[96vw] h-[667px] md:h-[770px] md:w-[98vw] lg:w-[99vw] header-bg relative"
+      class="wrapper w-[96vw] h-[667px] md:h-[670px] md:w-[98vw] lg:w-[98vw] xl:w-[99vw] header-bg relative"
     >
       <section
         id="nav"
-        class="flex md:flex-col items-center justify-between md:justify-center px-7 py-4 bg-linear-to-b from-90% from-black/30 duration-500"
+        class="flex tablePoint:flex-col items-center justify-between tablePoint:justify-center px-7 py-4 bg-linear-to-b from-90% from-black/30 duration-500"
       >
-        <button id="menuBtn" class="md:hidden w-[18px] h-[18px] relative">
+        <button
+          id="menuBtn"
+          class="tablePoint:hidden w-[18px] h-[18px] relative"
+        >
           <div
             id="top-div"
             class="w-full h-[1px] bg-white absolute top-0"
@@ -26,14 +29,14 @@
         </button>
         <h1
           id="SWAROVSKI-title"
-          class="text-2xl md:text-9xl ztChablis text-white"
+          class="text-2xl tablePoint:text-9xl md:mb-3 ztChablis text-white"
         >
           SWAROVSKI
         </h1>
-        <nav class="flex gap-20 md:mb-5">
+        <nav class="flex gap-20 mb-1">
           <div
             id="menu"
-            class="flex-col absolute z-50 top-0 left-[-375px] w-[375px] h-full text-black duration-500 bg-white md:bg-transparent md:text-white md:w-auto md:h-auto md:static md:flex-row flex gap-5 md:gap-16"
+            class="flex-col absolute z-50 top-0 left-[-375px] w-[375px] h-full text-black duration-500 bg-white tablePoint:bg-transparent tablePoint:text-white tablePoint:w-auto tablePoint:h-auto tablePoint:static tablePoint:flex-row flex gap-5 tablePoint:gap-16"
           >
             <button id="closeMenuBtn" class="hidden mt-[20px] ml-[10px]">
               <svg
@@ -129,7 +132,7 @@
           </div>
         </nav>
       </section>
-      <div id="searchBlock" class="w-full bg-white px-4 py-3 hidden">
+      <div id="searchBlock" class="w-full bg-white px-80 py-3 hidden">
         <div class="w-full relative">
           <svg
             class="absolute left-[5px] top-[8px]"
@@ -173,7 +176,7 @@
           </svg>
         </div>
       </div>
-      <div class="ml-3 mt-96 md:ml-24 md:mt-40">
+      <div class="absolute bottom-16 left-3 md:bottom-[30px] md:left-10">
         <h2 class="heading-texts ztChablis">Весна-Лето 2025</h2>
         <p class="text-sm sm:text-base mt-3 mb-10">
           Шагните в наш магический мир, где сияет<br />
@@ -181,7 +184,9 @@
         </p>
         <div class="flex gap-1.5">
           <button class="black-btn EuclidCircularB">Каталог</button>
-          <button class="transparent-btn EuclidCircularB">Узнать больше</button>
+          <button class="transparent-btn px EuclidCircularB">
+            Узнать больше
+          </button>
         </div>
       </div>
     </header>
@@ -189,11 +194,9 @@
       class="wrapper bg-mainGray flex flex-col justify-center items-center py-[70px] md:py-[100px]"
     >
       <h2 class="heading-texts ztChablis mb-2.5">Мастера света с 1895 года</h2>
-      <p
-        class="max-w-[717px] text-[11px] px-2 md:px-0 md:text-base text-center"
-      >
+      <p class="max-w-[785px] text-sm px-2 md:px-0 md:text-lg text-center">
         Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
-        <br />
+        <br class="hidden sm:block" />
         с использованием уникальной технологии огранки. Бренд Swarovski,
         основанный в 1895 году Даниэлем Swarovski, прославился на весь мир
         благодаря своему мастерству в обработке стеклянных кристаллов и создании
@@ -205,7 +208,7 @@
     >
       <button
         id="prev"
-        class="absolute top-1/2 left-2 -translate-y-1/2 bg-transparent rounded-full p-2 hover:bg-gray-200 z-50"
+        class="absolute top-1/2 left-[2%] sm:left-[7%] -translate-y-1/2 bg-transparent rounded-full p-2 hover:bg-gray-200 z-50"
       >
         <svg
           width="24"
@@ -225,7 +228,7 @@
       </button>
       <button
         id="next"
-        class="absolute top-1/2 right-2 -translate-y-1/2 bg-transparent rounded-full p-2 hover:bg-gray-200 z-50"
+        class="absolute top-1/2 right-[2%] md:right-[7%] -translate-y-1/2 bg-transparent rounded-full p-2 hover:bg-gray-200 z-50"
       >
         <svg
           width="24"
@@ -303,11 +306,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -332,11 +345,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -361,11 +384,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -390,11 +423,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -419,11 +462,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -448,11 +501,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -477,11 +540,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -506,11 +579,21 @@
             </svg>
           </button>
           <img src="./img/Rectangle 17.png" alt="rectangle" />
-          <p class="text-base max-w-[220px] mt-2.5 mb-6 EuclidCircularB">
+          <p
+            class="text-base hidden sm:block max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
             Сережки из белого золота с аметистами и рубинами
           </p>
-          <p class="relative text-borderGray sm:hidden">24 000 000 ₽</p>
+          <p
+            class="text-base sm:hidden max-w-[220px] mt-2.5 mb-6 EuclidCircularB"
+          >
+            Швейцарские наручные часы Swarovski
+          </p>
           <p class="EuclidCircularB font-bold">8 000 000 ₽</p>
+          <div class="relative sm:hidden mt-1.5 mb-2.5">
+            <div class="absolute w-[90px] h-[1px] bg-borderGray top-3"></div>
+            <p class="relative text-borderGray">24 000 000 ₽</p>
+          </div>
           <button class="transparent-btn EuclidCircularB sm:hidden">
             Посмотреть
           </button>
@@ -518,23 +601,25 @@
       </div>
     </section>
     <section
-      class="wrapper w-full py-[100px] bg-white flex flex-col items-center"
+      class="wrapper w-full py-[50px] sm:py-[100px] bg-white flex flex-col items-center"
     >
       <h2 class="heading-texts ztChablis mb-5">Коллекции</h2>
       <div class="w-full flex flex-col sm:flex-row justify-between">
-        <div
-          class="px-3 sm:px-[50px] sm:py-[125px] md:px-[100px] xl:py-[250px]"
-        >
-          <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Культовый гламур</h3>
-          <p
-            class="text-sm md:text-base EuclidCircularB mt-5 mb-10 max-w-[510px]"
-          >
-            Мир цвета и света Swarovski оживает с Арианой Гранде, воплощающей
-            суть нашей легендарной семьи Millenia. Свежие сиреневые тона в
-            сочетании с ее яркой звездной силой создают высококлассную модную
-            фантазию.
-          </p>
-          <a class="text-black underline font-bold" href="#">Посмотреть</a>
+        <div class="sm:w-[50%] flex flex-col justify-center items-center">
+          <div>
+            <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Культовый гламур</h3>
+            <p
+              class="text-sm md:text-lg EuclidCircularB mt-5 mb-10 max-w-[310px] md:max-w-[510px]"
+            >
+              Мир цвета и света Swarovski оживает с Арианой Гранде, воплощающей
+              суть нашей легендарной семьи Millenia. Свежие сиреневые тона в
+              сочетании с ее яркой звездной силой создают высококлассную модную
+              фантазию.
+            </p>
+            <div class="w-[94px] pb-0.5 border-b-2 border-b-black mb-1">
+              <a class="text-black font-bold" href="#">Посмотреть</a>
+            </div>
+          </div>
         </div>
         <img class="w-full sm:w-[50%]" src="./img/glamor.png" alt="Glamor" />
       </div>
@@ -544,35 +629,39 @@
           src="./img/StrengthOfColors.png"
           alt="Strength Of Colors"
         />
-        <div
-          class="px-3 sm:px-[50px] sm:py-[125px] md:px-[100px] xl:py-[250px]"
-        >
-          <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Сила цветов</h3>
-          <p
-            class="text-sm md:text-base EuclidCircularB mt-5 mb-10 max-w-[510px]"
-          >
-            Чувственный. Поэтично. Прохладный. Ариана Гранде расцветает в
-            весенне-летнем сезоне 2025 года, воплощая собой яркую романтику в
-            Идиллии. Нежные мотивы флоры и фауны, созданные с удивительной
-            живостью, придают ей мягкое сияние.
-          </p>
-          <a class="text-black underline font-bold" href="#">Посмотреть</a>
+        <div class="sm:w-[50%] flex flex-col justify-center items-center">
+          <div>
+            <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Сила цветов</h3>
+            <p
+              class="text-sm md:text-lg EuclidCircularB mt-5 mb-10 max-w-[310px] md:max-w-[510px]"
+            >
+              Чувственный. Поэтично. Прохладный. Ариана Гранде расцветает в
+              весенне-летнем сезоне 2025 года, воплощая собой яркую романтику в
+              Идиллии. Нежные мотивы флоры и фауны, созданные с удивительной
+              живостью, придают ей мягкое сияние.
+            </p>
+            <div class="w-[94px] pb-0.5 border-b-2 border-b-black mb-1">
+              <a class="text-black font-bold" href="#">Посмотреть</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="w-full flex flex-col sm:flex-row justify-between">
-        <div
-          class="px-3 sm:px-[50px] sm:py-[125px] md:px-[100px] xl:py-[250px]"
-        >
-          <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Коллекция Гема</h3>
-          <p
-            class="text-sm md:text-base EuclidCircularB mt-5 mb-10 max-w-[510px]"
-          >
-            Погрузитесь в прекрасный сад цветущих кристаллов. Gema предлагает
-            сияющие украшения с нежными листьями и яркими цветами, которые
-            раскрываются на ваших глазах, а также яркие продукты, вдохновленные
-            этой линией.
-          </p>
-          <a class="text-black underline font-bold" href="#">Посмотреть</a>
+        <div class="sm:w-[50%] flex flex-col justify-center items-center">
+          <div>
+            <h3 class="h3-headings mt-8 md:mt-0 ztChablis">Коллекция Гема</h3>
+            <p
+              class="text-sm md:text-lg EuclidCircularB mt-5 mb-10 max-w-[310px] md:max-w-[510px]"
+            >
+              Погрузитесь в прекрасный сад цветущих кристаллов. Gema предлагает
+              сияющие украшения с нежными листьями и яркими цветами, которые
+              раскрываются на ваших глазах, а также яркие продукты,
+              вдохновленные этой линией.
+            </p>
+            <div class="w-[94px] pb-0.5 border-b-2 border-b-black mb-1">
+              <a class="text-black font-bold" href="#">Посмотреть</a>
+            </div>
+          </div>
         </div>
         <img
           class="w-full sm:w-[50%]"
@@ -618,7 +707,7 @@
       >
         <img src="./img/whose-brand.png" alt="brand" />
         <h3 class="text-2 font-bold EuclidCircularB">Чей это бренд?</h3>
-        <p class="text-sm md:text-base EuclidCircularB">
+        <p class="text-xs sm:text-sm md:text-base EuclidCircularB">
           Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
           с использованием уникальной технологии огранки. Бренд Swarovski,
           основанный в 1895 году Даниэлем Swarovski.
@@ -632,7 +721,7 @@
           Чей это бренд? Как я могу убедиться <br />
           в качестве?
         </h3>
-        <p class="text-sm md:text-base EuclidCircularB">
+        <p class="text-xs sm:text-sm md:text-base EuclidCircularB">
           Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
           с использованием уникальной технологии огранки.
         </p>
@@ -645,7 +734,7 @@
           Есть ли гарантия <br />
           на изделия?
         </h3>
-        <p class="text-sm md:text-base EuclidCircularB">
+        <p class="text-xs sm:text-sm md:text-base EuclidCircularB">
           Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются
           с использованием уникальной технологии огранки.
         </p>
@@ -671,16 +760,16 @@
         <button class="black-btn">В каталог</button>
       </div>
       <img
-        class="static sm:absolute top-20 right-6 sm:right-12 md:right-24 -z-0"
+        class="static sm:absolute top-20 right-6 sm:right-12 md:right-24 -z-0 w-[91px] sm:w-[250px]"
         src="./img/goose.png"
         alt="goose"
       />
     </section>
     <footer
-      class="wrapper px-[10px] py-[5px] sm:px-[100px] sm:py-[50px] bg-black text-white flex flex-wrap justify-center items-center gap-3"
+      class="wrapper px-[10px] py-[60px] sm:px-[100px] sm:py-[50px] bg-black text-white flex flex-wrap justify-center items-center gap-3"
     >
       <div
-        class="w-full flex flex-wrap justify-start items-start pb-10 gap-x-8 sm:gap-x-56 gap-y-9 border-b border-b-white EuclidCircularB"
+        class="w-full flex flex-wrap justify-start items-start pb-5 sm:pb-10 gap-x-8 sm:gap-x-56 gap-y-9 border-b border-b-white EuclidCircularB"
       >
         <div class="w-[150px] sm:w-auto">
           <p class="block mb-5" href="#">Коллекции</p>
@@ -703,7 +792,7 @@
         </div>
         <div>
           <p class="block mb-5" href="#">Магазины</p>
-          <a class="block text-xs text-borderGray mb-2">Магазины</a>
+          <a class="block text-xs text-borderGraymb-2">Магазины</a>
         </div>
       </div>
       <h2 class="text-xl md:text-8xl ztChablis text-white">SWAROVSKI</h2>
